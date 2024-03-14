@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observer Pattern</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 100%;
+      background-color: deeppink;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    .container p {
+      width: 100%;
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container .obs {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  </style>
+  <script src="src/main.js" defer></script>
+  <body>
+    <div class="container">
+      <div class="obs">
+        <span>👀</span>
+        <p id="price">$00.00</p>
+      </div>
+
+      <input id="fake-realtime-value" type="text" value="0" />
+    </div>
+  </body>
+</html>
